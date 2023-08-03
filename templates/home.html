@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Flower Classifier</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/hstyle.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Iris Flower Classification</h1>
+        <form action="/" method="post" class="form-container">
+            <div class="form-group">
+                <label for="sepal_length">Sepal Length</label>
+                <input type="number" class="form-control" name="sepal_length" placeholder="Enter Sepal Length" min="0" max="10" step="0.01" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="sepal_width">Sepal Width</label>
+                <input type="number" class="form-control" name="sepal_width" placeholder="Enter Sepal width" min="0" max="10" step="0.01" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="petal_length">Petal Length</label>
+                <input type="number" class="form-control" name="petal_length" placeholder="Enter Petal Length" min="0" max="10" step="0.01" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="petal_width">Petal Width</label>
+                <input type="number" class="form-control" name="petal_width" placeholder="Enter Petal Width" min="0" max="10" step="0.01" autocomplete="off" required>
+            </div>
+            <div class="text-center">
+            <button type="submit" class="btn btn-primary">Predict</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

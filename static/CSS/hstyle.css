@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(204, 204, 215, 0.323); /* Replace this color code with the desired background color */
+}
+.form-container {
+    border: 1px solid #888c90;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    border: 1px solid #111212;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome and Safari */
+    margin: 0; /* Remove the margin to hide the spinners */
+}

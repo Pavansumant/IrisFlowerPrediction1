@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Flower Classifier - Result</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='CSS/rstyle.css') }}">
+</head>
+<body>
+    <div class="custom-container">
+        <h1 class="result-heading">Prediction Result</h1>
+        <div class="result-box"> <!-- Added a div for the result box -->
+            <div class="result-text">
+                <p class="lead">Predicted Iris Species: <span class="prediction-status">{{ predicted_species }}</span></p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="/" class="back-button">Back to Input</a>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

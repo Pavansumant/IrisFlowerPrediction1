@@ -1,0 +1,61 @@
+        body {
+            background-color: #f8f9fa; /* Replace with your desired background color */
+        }
+
+        .custom-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 1px solid #2376c9;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-heading {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #31e3a4; /* Blue color */
+            font-size: 28px;
+        }
+
+        .result-text {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold; /* Added to make the prediction status and result bold */
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto; /* Added margin to the back button */
+            width: 150px;
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007bff; /* Blue color */
+            cursor: pointer;
+            font-size: 18px;
+            /* Remove current hover effect */
+            transition: none;
+            box-shadow: none;
+        }
+
+        /* New hover effect */
+        .back-button:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+        
+        /* Added to add a border around the result box */
+        .result-box {
+            border: 2px solid #007bff; /* Blue color */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .lead,.prediction-status {
+            font-weight: bold;
+        }
